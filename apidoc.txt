@@ -1,0 +1,148 @@
+authentication
+
+schema:User
+
+attributes:[username,email,password]
+
+1)apip for creating user account
+
+  url:http://127.0.0.1:8000/api/register
+
+  method:post
+
+  body:{
+    "username"
+     email
+     password
+  }
+
+
+======================================================================================================================================
+
+
+
+schema:expense
+
+attributes:[id.title,amount,category,user_object.priority,created_date]
+
+
+
+api for listing all expenses
+
+method:get
+
+body:nill
+
+autherisation:[username,password]
+
+
+
+api for adding a new expenses
+  url:http://127.0.0.1:8000/api/expenses/
+
+  method:post
+
+  body:{title,amount,category,priority}
+
+  autherisation:basic authentication
+
+
+ 3)api for fetching expenses detail
+
+  url:http://127.0.0.1:8000/api/expenses/{id}
+
+  method:post
+
+  body:{title,amount,category,priority}
+
+  autherisation:basic authentication
+
+
+
+4)api for updating expense detail
+
+  url:http://127.0.0.1:8000/api/expenses/{id}
+
+  method:put
+
+  body:{title,amount,category,priority}
+
+  autherisation:basic authentication
+
+
+5)api for deleteing a expense
+
+  url
+  method:
+
+  body:
+
+  authentication:
+
+
+
+  =====================================================================================================================================
+
+  schema:income
+
+  attributes:[title,amount,category,created_date]
+
+
+1)api for lising all income
+
+url:http://127.0.0.1:8000/api/income/
+
+method:get
+
+body:nill
+
+authentication:user authentication
+
+2)api for creating a income
+
+ url:http://127.0.0.1:8000/api/income/
+
+method:post
+
+body:[title,amount,catgory]
+
+authentication:user authentication
+
+
+3)api for fetching a income
+
+  url:http://127.0.0.1:8000/api/income/(id)/
+
+method:get
+
+body:nill
+
+authentication:user authentication
+
+
+4)api for updating a income
+
+url:http://127.0.0.1:8000/api/income/{id}
+
+method:put
+
+body:["title,amount,category]
+
+authentication:user authentication
+
+
+5)api for deleteing a income
+
+url:http://127.0.0.1:8000/api/income/{id}
+
+method:delete
+
+body:nill
+
+authentication:user authentication
+
+
+ 
+
+
+
